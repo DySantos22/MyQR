@@ -1,99 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Noto+Serif&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: gray !important;
+    background-image: url("/img/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-nav {
-    background-color: #000000;
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+}
+
+#header {
+    background-color: rgb(33, 109, 207);
+    max-width: 100%;
     width: 100%;
+    max-height: 5rem;
     height: 4rem;
-
 }
 
-#logoo {
+
+#cabecalho {
+    color: #ffffff;
+    font-size: 26px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.center {
     display: flex;
     justify-content: center;
-    padding-top: 0.5rem;
-    font-family: 'Lato', sans-serif;
-    transition: 1.5s;
-    color: #ffffff;
+    padding: 1rem;
 }
 
-#logo {
+#form {
+    background-color: #ffffffd8;
+    width: 60%;
+    height: 60%;
+    left: 35%;
+    margin: -130px 0 0 -210px;
+    padding: 10px;
     position: absolute;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 28px;
+    top: 40%;
 }
 
-#div-form{
-    position: relative;
-    min-height: 90vh;
+#titulo {
+    color: #000000;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
-form {
-    background-color: #ffffff;
-    position: absolute;
-    height: 450px;
-    width: 40%;
-    top: 50%;
-    left: 35.5%;
-    transform: translateY(-50%) translateX(-50%);
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18px;
 }
 
-#paragrafo, #paragrafo2{
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 24px;
-    font-family: 'Noto Serif', serif;
-}
- 
-
-#input{
-    margin: 6rem 0 0 2rem;
+#link{
+    margin: 5rem 0 0 13rem;
+    width: 25rem;
+    height: 2rem;
+    font-size: 16px;
+    padding-left: 0.5rem;
+    border-radius: 10px;
+    border: 0.5px solid #000000;
 }
 
-aside{
-    background-color: #ffffff;
-    position: absolute;
-    height: 450px;
-    width: 25%;
-    top: 22.47rem;
-    left: 68%;
-    transform: translateY(-50%) translateX(-50%);
-}
-
-#div-submit{
-    display: block;
-
+#link:valid{
+    border-radius: 1px solid #00ff00;
 }
 
 #submit{
-    position: relative;
-    width: 16rem;
-    height: 3rem;
-    margin: 8rem 0 0 10rem;
-    background-color: #000000;
-    transition: 1.5s;
-    border: none;
-    font-family: 'Noto Serif', serif;
+    width: 14rem;
+    height: 2.5rem;
+    margin: 7rem 0 0 19rem;
+    background-color:  rgb(33, 109, 207);
     color: #ffffff;
-}
-
-#submit:hover{
-    background-color: gray;
-}
-
-img{
-    width: auto;
-    height: auto;
-    max-height: 300px;
-    margin: auto;
-    margin: 1rem 0 0 6rem;
+    font-size: 16px;
+    border: 0.5px solid #000000;
+    border-radius: 10px;
 }
