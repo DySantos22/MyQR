@@ -1,72 +1,52 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/icon.png">
+    <title>QrCode</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-    <title>QRCode</title>
 </head>
 
 <body>
-    <nav>
-        <div id="logoo">
-            <a href="index.html" id="logo">MyQR</a>
-        </div>
-    </nav>
-    <main>
-        <header>
-            <div id="div-form">
-                <form action="" method="POST" name="form">
-                    <div id="paragrafo-center">
-                        <div id="paragrafo">
-                            <h4>QRCode</h4>
-                        </div>
-
-                    </div>
-                    <hr>
-                    <div class="row g-3">
-                        <div class="col-sm-8 w-75">
-                            <div id="input-center">
-                                <input type="text" class="form-control" placeholder="Link" aria-label="Link"
-                                    minlength="20" id="input">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="div-submit">
-                        <div id="submit-center">
-                            <input type="submit" name="submit" value="GERAR" id="submit" onclick="gerarpdf()">
-                        </div>
-                    </div>
-
-                </form>
+    <div id="main">
+        <div id="header">
+            <div class="center">
+                <a href="index.html" id="cabecalho"><strong>MyQR</strong></a>
             </div>
-        </header>
-
-        <div id="div-aside">
-            <aside>
-                <div id="conteudo-aside">
-                    <h4 id="paragrafo2">Exemplo:</h4>
-                    <hr>
-                    <img src="img/exemplo.png" alt="Exemplo">
-                </div>
-            </aside>
         </div>
-    </main>
 
-    <footer>
+        <section>
+            <div id="conteudo">
+                <div id="form">
+                    <form action="" method="POST">
+                        <div class="center">
+                            <p id="titulo">Gerador de QRCode</p>
+                        </div>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="#">Link</a></li>
+                                <li><a href="#">PDF</a></li>
+                                <li><a href="#">Texto</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <input type="text" id="link" minlength="1" maxlength="100" placeholder="Link" required>
+                        </div>
+
+                        <div>
+
+                            <input type="submit" id="submit" value="Avançar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
 
 
-
-    </footer>
-    <script src="scripts/creation.js"></script>
 </body>
+
 </html>
