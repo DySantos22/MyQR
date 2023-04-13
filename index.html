@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QrCode</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- Script da biblioteca qrcode.js -->
+     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,33 +25,28 @@
         <section>
             <div id="conteudo">
                 <div id="form">
-                    <form action="" method="POST">
-                        <div class="center">
-                            <p id="titulo">Gerador de QRCode</p>
-                        </div>
-                        <div id="menu">
-                            <ul>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">PDF</a></li>
-                                <li><a href="#">Texto</a></li>
-                            </ul>
-                        </div>
+                    <div class="center">
+                        <p id="titulo">Gerador de QRCode</p>
+                    </div>
+                    <div id="menu">
+                        <ul>
+                            <li>Clique aqui para <a href="#" id="pdf">PDF</a></li>
+                        </ul>
+                    </div>
 
-                        <div>
-                            <input type="text" id="link" minlength="1" maxlength="100" placeholder="Link" required>
-                        </div>
-
-                        <div>
-
-                            <input type="submit" id="submit" value="Avançar">
-                        </div>
-                    </form>
+                    <div>
+                        <input type="text" id="url" placeholder="Link ou Texto" required>
+                    </div>
+                    <div>
+                        <button id="button">Gerar</button>
+                    </div>
+                    <div id="qrcode"></div>
                 </div>
             </div>
         </section>
     </div>
 
-
+    <script src="scripts/creation.js"></script>
 </body>
 
 </html>

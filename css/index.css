@@ -59,13 +59,15 @@ a:visited {
 ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
-    flex-direction: row;
     justify-content: center;
     font-size: 18px;
 }
 
-#link{
+#pdf{
+    color:rgb(6, 111, 248);
+}
+
+#url{
     margin: 5rem 0 0 13rem;
     width: 25rem;
     height: 2rem;
@@ -75,11 +77,11 @@ ul {
     border: 0.5px solid #000000;
 }
 
-#link:valid{
-    border-radius: 1px solid #00ff00;
+#url:valid{
+    border: 1px solid rgb(33, 109, 207);
 }
 
-#submit{
+#button{
     width: 14rem;
     height: 2.5rem;
     margin: 7rem 0 0 19rem;
@@ -88,4 +90,10 @@ ul {
     font-size: 16px;
     border: 0.5px solid #000000;
     border-radius: 10px;
+}
+
+#qrcode{
+    position: relative;
+    left: 5rem;
+
 }
