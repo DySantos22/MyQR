@@ -1,11 +1,10 @@
+// Aqui ele pega o botao que o usuario clica
 var button = document.querySelector("#button")
 
 document.querySelector('#button').addEventListener('click',function (){
     var url = document.querySelector('#url').value
 
-    //Aqui ele muda o nome do botão, indicando que o qrcode foi gerado
-    button.innerText = "QRCode Gerado";
-
+    //Se não houver nada digitado no input, aqui ele mostra o alerta e reseta a página.
     if(!url){
         alert('Insira um texto ou Link para gerar QRCode');
         //Ele recarrega a página, caso não tiver nada no input
@@ -26,4 +25,6 @@ document.querySelector('#button').addEventListener('click',function (){
         correctLevel: QRCode.CorrectLevel.H
 
     })
+       //Aqui ele muda o nome do botão, indicando que o qrcode foi gerado
+       button.innerText = "QRCode Gerado";
 })

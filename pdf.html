@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QrCode</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/pdf.css">
     <link rel="icon" type="image/png" href="img/icon.png">
     <!-- Script da biblioteca qrcode.js -->
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
@@ -29,13 +29,10 @@
                     <div class="center">
                         <h2>Gerador de QRCode</h2>
                     </div>
-                    <div class="center">
-                        <p>Quer fazer para PDF? <a href="pdf.html">Clique aqui</a></p>
-                    </div>
 
                     <!-- Link do usuario -->
                     <div class="center">
-                        <input type="text" id="url" placeholder="Insira aqui" required>
+                        <input type="file" id="file" required>
                     </div>
 
                     <!--Botao que gera o QRCode através do JS-->
@@ -57,7 +54,7 @@
         </footer>
     </div>
     <!-- Script que importa o JS principal -->
-    <script src="scripts/qr_pdf.js"></script>
+    <script src="scripts/qr.js"></script>
 </body>
 
 </html>

@@ -1,99 +1,104 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Mako&display=swap');
+
+*{
     margin: 0;
     padding: 0;
 }
 
-body {
-    background-image: url("/img/background.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
+#header{
+position: relative;
+width: 100%;
+height: 3.5rem;
+background: #146C94;
 }
 
-a {
-    color: #000000;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #000000;
-}
-
-#header {
-    background-color: rgb(33, 109, 207);
-    max-width: 100%;
-    width: 100%;
-    max-height: 5rem;
-    height: 4rem;
-}
-
-
-#cabecalho {
-    color: #ffffff;
-    font-size: 26px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-}
-
-#form {
-    background-color: #ffffffd8;
-    width: 60%;
-    height: 60%;
-    left: 35%;
-    margin: -130px 0 0 -210px;
-    padding: 10px;
-    position: absolute;
-    top: 40%;
-}
-
-#titulo {
-    color: #000000;
+#cabecalho{
     font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    margin: 0.4rem;
+    font-family: 'Mako', sans-serif;
 }
 
-ul {
-    list-style: none;
+.center{
     display: flex;
+    align-items: center;
     justify-content: center;
-    font-size: 18px;
+    flex-direction: column;
 }
 
-#pdf{
-    color:rgb(6, 111, 248);
+#form{
+    margin: 0 auto;
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 25%;
+    left: 34%;
+    margin: -25px 0 0 -25px;
+
 }
 
-#url{
-    margin: 5rem 0 0 13rem;
-    width: 25rem;
-    height: 2rem;
+h2{
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding-top:1rem;
+    font-family: 'Mako', sans-serif;
+}
+
+p{
     font-size: 16px;
-    padding-left: 0.5rem;
-    border-radius: 10px;
-    border: 0.5px solid #000000;
+    font-family: 'Mako', sans-serif;
+    padding-top: 10px;
 }
 
-#url:valid{
-    border: 1px solid rgb(33, 109, 207);
+a{
+    text-decoration: none;
+    color: #146C94;
+}
+
+input{
+    margin-top: 2rem;
+    padding-left: 5px;
+    width: 410px;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+    background-color: #F6F1F1;
 }
 
 #button{
-    width: 14rem;
-    height: 2.5rem;
-    margin: 7rem 0 0 19rem;
-    background-color:  rgb(33, 109, 207);
-    color: #ffffff;
-    font-size: 16px;
-    border: 0.5px solid #000000;
+    margin-top: 2rem;
+    width: 250px;
+    height: 40px;
     border-radius: 10px;
+    border: none;
+    background-color: #11b7e6;
+    font-size: 16px;
+    transition: 2s;
+}
+
+#button:hover{
+    background-color:#146C94;
 }
 
 #qrcode{
+    width: 200px;
+    height: 200px;
     position: relative;
-    left: 5rem;
+    top: 21rem;
+    left: 37rem;
+}
 
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: #146C94;
+}
+
+h4{
+    padding: 0.2rem;
+    font-family: 'Mako', sans-serif;
 }
