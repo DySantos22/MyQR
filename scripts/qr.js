@@ -11,7 +11,6 @@ document.querySelector('#button').addEventListener('click',function (){
         window.location.reload(true);
         return;
     }
-
     //Aqui ele define o vazio na div qrcode
     document.querySelector('#qrcode').innerHTML = ''
 
