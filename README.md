@@ -1,4 +1,4 @@
-# QRCode
+# MyQR
  Projeto pessoal, onde a finalidade é criar QRCodes para me ajudar e me facilitar no meu dia a dia. 
  ###
  Quase sempre quando eu precisava de algum QRCode, eu procurava sites onde não precisava pagar e que não tivesse a expiração do QR. 
