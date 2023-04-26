@@ -13,6 +13,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
         integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
         crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.2/tinycolor.min.js"></script>
+
 </head>
 
 <body>
@@ -30,7 +32,7 @@
                         <h2>Gerador de QRCode</h2>
                     </div>
                     <div class="center">
-                        <p>Quer fazer para PDF? <a href="pdf.html">Clique aqui</a></p>
+                        <p id="subtitulo">Insira sua URL ou Texto</p>
                     </div>
 
                     <!-- Link do usuario -->
@@ -58,6 +60,7 @@
     </div>
     <!-- Script que importa o JS principal -->
     <script src="scripts/qr.js"></script>
+    <script src="scripts/qrcode.min.js"></script>
 </body>
 
 </html>

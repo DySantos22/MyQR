@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Mako&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+position: relative;
+width: 100%;
+height: 3.5rem;
+background: #146C94;
+}
+
+#cabecalho{
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0.4rem;
+    font-family: 'Mako', sans-serif;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#form{
+    margin: 0 auto;
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 25%;
+    left: 34%;
+    margin: -25px 0 0 -25px;
+
+}
+
+h2{
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding-top:1rem;
+    font-family: 'Mako', sans-serif;
+}
+
+p{
+    font-size: 16px;
+    font-family: 'Mako', sans-serif;
+    padding-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #146C94;
+}
+
+input[type=file]{
+    margin-top: 2rem;
+    width: 310px;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+    
+}
+
+#button{
+    margin-top: 2rem;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #11b7e6;
+    font-size: 16px;
+    transition: 2s;
+}
+
+#button:hover{
+    background-color:#146C94;
+}
+
+#qrcode_pdf{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 21rem;
+    left: 37rem;
+}
+
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: #146C94;
+}
+
+h4{
+    padding: 0.2rem;
+    font-family: 'Mako', sans-serif;
+}

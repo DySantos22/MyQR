@@ -11,8 +11,7 @@
     <!-- Script da biblioteca qrcode.js -->
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
-        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
-        crossorigin="anonymous"></script>
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,20 +28,23 @@
                     <div class="center">
                         <h2>Gerador de QRCode</h2>
                     </div>
+                    <div class="center">
+                        <p>Quer fazer para Link? <a href="index.html">Clique aqui</a></p>
+                    </div>
 
                     <!-- Link do usuario -->
                     <div class="center">
-                        <input type="file" id="file" required>
+                        <input type="file" id="file" accept=".pdf" required>
                     </div>
 
                     <!--Botao que gera o QRCode através do JS-->
                     <div class="center">
-                        <button id="button">GERAR</button>
+                        <button id="button">GERAR PDF</button>
                     </div>
                 </div>
 
                 <!-- Div onde mostra o QR final -->
-                <div id="qrcode"></div>
+                <div id="qrcode_pdf"></div>
 
             </div>
         </section>
